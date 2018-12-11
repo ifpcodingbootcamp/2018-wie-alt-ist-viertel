@@ -6,7 +6,7 @@ var map = L.map('mapid',
         minZoom: 9,
         maxZoom: 12,
         zoomDelta: 0.1,
-        zoomSnap: 0 //pinch to zoom Mobiles Zoomen
+        zoomSnap: 0 //pinch to zoom für mobiles Zoomen
     });
 //Hintergrund Weltkarte
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -28,7 +28,8 @@ L.geoJson(stadtteile, {
             weight: 1.5,
             fillOpacity: 1
         }
-    }
+    },
+    onEachFeature: bindEvents
 }).addTo(map);
 
 
@@ -56,8 +57,6 @@ function getcolor(Stadtteil) {
     if (value <= 44) {
         return colors [5]
     }
-
-
 }
 
 function getAlter(Stadtteilname) { //Schleifen-Funktion für Altersdurchschnitt
@@ -68,7 +67,16 @@ function getAlter(Stadtteilname) { //Schleifen-Funktion für Altersdurchschnitt
 
             return altersdurchschnitt[i].Indikator
         }
-
     }
+}
+
+var popup = L.popup({closeButton: false});
+
+// Maus-Events für jeden Stadtteil hinzufügen
+function bindEvents(feature, layer) {
+    var Bezirkname = feature.properties['name'];
+    var Altersbezirk = getAlter(Bezirkname);
+    // Popup hinzufügen
+    layer.bindPopup("Das Durchschnittsalter in " + Bezirkname.substring(14) + " ist " + Altersbezirk + " Jahre."); //14 Zeichen löschen
 
 }

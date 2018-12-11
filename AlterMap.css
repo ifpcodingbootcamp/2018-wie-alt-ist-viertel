@@ -7,3 +7,9 @@ body {
     height: 70vh; /* vh=viewport height für prozentuale Bildschirmhöhe */
 }
 
+/* Schrift für Leaflet Karten Popup */
+.leaflet-popup-content-wrapper {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
