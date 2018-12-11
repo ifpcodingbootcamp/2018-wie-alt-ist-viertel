@@ -80,3 +80,22 @@ function bindEvents(feature, layer) {
     layer.bindPopup("Das Durchschnittsalter in " + Bezirkname.substring(14) + " ist " + Altersbezirk + " Jahre."); //14 Zeichen löschen
 
 }
+var legend = L.control({position: 'bottomright'});
+
+legend.onAdd = function (map) {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        Altersstufen = [38, 39, 40, 41, 42, 43],
+        labels = [];
+
+    // loop through our density intervals and generate a label with a colored square for each interval
+    for (var i = 0; i < Altersstufen.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + colors[i]  + '"></i> ' +
+            Altersstufen[i] + (Altersstufen[i + 1] ? '&ndash;' + Altersstufen[i + 1] + '<br>' : '+');
+    }
+
+    return div;
+};
+
+legend.addTo(map); //Kopiert von https://leafletjs.com/examples/choropleth/
