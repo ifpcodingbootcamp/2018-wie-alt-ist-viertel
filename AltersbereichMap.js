@@ -1,4 +1,4 @@
-(function() {
+(function () {
     var colors = ['#feebe2', '#fcc5c0', '#fa9fb5', '#f768a1', '#c51b8a', '#7a0177'];
 
     var map = L.map('mapid2',
@@ -25,50 +25,106 @@
             11.732025146484373]
     ]);
 
-    L.geoJson(stadtteile, {
-        style: function (Stadtteil) {
-            return {
-                fillColor: getcolor(Stadtteil), //Stadtteile einfärben - siehe fct getcolor
-                color: "#333333",
-                weight: 1.5,
-                fillOpacity: 0.3
-            }
-            }
-    }).addTo(map);
-    function getcolor(Stadtteil) {
-        var Stadtteilname = Stadtteil.properties.name; //Aufruf stadtteile.js
-        var value = getAlter(Stadtteilname);
-
-        if (value <= 11) { //Bedingungen für Farbe definieren
-            return colors [0]
-        }
-        if (value <= 13) {
-            return colors [1]
-        }
-        if (value <= 15) {
-            return colors [2]
-        }
-        if (value <= 17) {
-            return colors [3]
-        }
-        if (value <= 19) {
-            return colors [4]
-        }
-        if (value <= 21) {
-            return colors [5]
+    function stylestadtteil(Stadtteil, altersgroup) {
+        return {
+            fillColor: getcolor(Stadtteil, altersgroup), //Stadtteile einfärben - siehe fct getcolor
+            color: "#333333",
+            weight: 1.5,
+            fillOpacity: 0.3
         }
     }
-    function getAlter(Stadtteilname) { //Schleifen-Funktion für Altersdurchschnitt
+
+    var layer = L.geoJson(stadtteile, {
+        style: function (Stadtteil) {
+            return stylestadtteil(Stadtteil, "0-18 Prozent")
+        }
+    }).addTo(map);
+
+    function getcolor(Stadtteil, altersgroup) {
+        var Stadtteilname = Stadtteil.properties.name; //Aufruf stadtteile.js
+        var value = getAlter(Stadtteilname, altersgroup);
+        if (altersgroup === "0-18 Prozent") {
+            if (value <= 11) { //Bedingungen für Farbe des 1. Altersbereichs definieren
+                return colors [0]
+            }
+            if (value <= 13) {
+                return colors [1]
+            }
+            if (value <= 15) {
+                return colors [2]
+            }
+            if (value <= 17) {
+                return colors [3]
+            }
+            if (value <= 19) {
+                return colors [4]
+            }
+            if (value <= 21) {
+                return colors [5]
+            }
+        }
+        if (altersgroup === "0-65 Prozent") {
+            if (value <= 65) { //Bedingungen für Farben des 2. Altersbereichs definieren
+                return colors [0]
+            }
+            if (value <= 68) {
+                return colors [1]
+            }
+            if (value <= 71) {
+                return colors [2]
+            }
+            if (value <= 74) {
+                return colors [3]
+            }
+            if (value <= 77) {
+                return colors [4]
+            }
+            if (value <= 80) {
+                return colors [5]
+            }
+        }
+        if (altersgroup === "65 und aelter Prozent") {
+            if (value <= 13) { //Bedingungen für Farben des 3. Altersbereichs definieren
+                return colors [0]
+            }
+            if (value <= 15) {
+                return colors [1]
+            }
+            if (value <= 17) {
+                return colors [2]
+            }
+            if (value <= 19) {
+                return colors [3]
+            }
+            if (value <= 21) {
+                return colors [4]
+            }
+            if (value <= 23) {
+                return colors [5]
+            }
+        }
+    }
+
+    function getAlter(Stadtteilname, altersgroup) { //Schleifen-Funktion für Altersdurchschnitt
         for (var i = 0; i < altersgruppen.length; i++) {
             //Bezug zu altersdurschnitt.js
             if (Stadtteilname.startsWith(altersgruppen[i].Name)) {
-                return parseFloat(altersgruppen[i]["0-18 Prozent"].replace(",","."))
+                return parseFloat(altersgruppen[i][altersgroup].replace(",", "."))
             }
         }
     }
 
+    var selectbox = document.querySelector(".auswahl")
+
+    function onChange() {
+        var altersgroup = selectbox.value
+        layer.setStyle(function (Stadtteil) {
+            return stylestadtteil(Stadtteil, altersgroup)
+        })
+    }
 
 
+    selectbox.addEventListener("change", onChange)
 
 
 })();
