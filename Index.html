@@ -2,10 +2,10 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <title>Wie alt ist mein Viertel?</title>
     <link rel="stylesheet" href="AlterMap.css"/>
-    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -15,11 +15,35 @@
 
 </head>
 <body>
+<div class="textbox">
+
     <h1>Wie alt ist mein Viertel?</h1>
-    <div id="mapid"></div>
-    <script src="stadtteile.js"></script>
-    <script src="altersdurschnitt.js"></script>
-    <script src="AlterMap.js"></script> <!--- Reihenfolge beachten --->
+
+    <p id="Text1">
+        Monochromes Beige oder quietschbunte Kinderkleidung, Kampf um die Kita-Plätze oder um den besten Platz zum
+        Entenfüttern? Was dominiert in Ihrem Viertel? In der interaktiven Karte basierend auf den Daten der Stadt
+        München können Sie auf den ersten Blick erkennen, wie hoch das Durchschnittsalter in Ihrem Stadtviertel
+        tatsächlich ist. Von der jungen <strong> Maxvorstadt </strong> bis zum Senior unter den Stadtteilen:
+        <strong> Hadern </strong> - je dunkler der Grünton, desto höher ist das
+        Durchschnittsalter in Ihrem Viertel.
+    </p>
+</div>
+<div id="mapid"></div>
+
+<div class="textbox">
+    <p id="Text2">
+        Schöne Altbauten, Kneipen, ausgefallene Läden: Viertel wie <strong> Schwabing, Maxvorstadt und Sendling </strong> sind bei jungen
+        Leuten besonders beliebt. Dort machen Menschen zwischen 18 und 65 Jahren die größte Bevölkerungsgruppe aus. Die
+        Beliebtheit schlägt sich in den Mietpreisen nieder. Wer sich dort weniger niederlässt, sind Familien oder Senioren.
+        Letztere wohnen vor allem im Süden der Stadt.
+        In unserer interaktiven Karte finden Sie heraus, welche Altersgruppe in Ihrem Stadtbezirk vorherrschend ist.
+
+</p>
+</div>
+
+<script src="stadtteile.js"></script>
+<script src="altersdurschnitt.js"></script>
+<script src="AlterMap.js"></script> <!--- Reihenfolge beachten --->
 
 </body>
 </html>

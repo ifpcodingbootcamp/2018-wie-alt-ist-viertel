@@ -1,3 +1,28 @@
+body, html, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+
+.textbox {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 24px 0px 24px 0px;
+    line-height: 1.4;
+}
+
+p {
+    padding: 12px 0px 12px 0px;
+    /*Abstand oben und unten 12 Pixel. Rechts und links nichts */
+}
+
+.durch {
+
+    text-align: center;
+}
+
 body {
     background-color: #ffc9ee;
     color: #333333;
@@ -17,6 +42,7 @@ body {
     line-height: 18px;
     color: #333333;
     background-color: white;
+    padding-right: 7px;
 }
 .legend i {
     width: 18px;
@@ -25,3 +51,5 @@ body {
     margin-right: 8px;
     opacity: 0.7;
 }
+
+

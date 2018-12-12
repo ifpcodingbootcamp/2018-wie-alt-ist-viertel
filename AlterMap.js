@@ -8,10 +8,12 @@ var map = L.map('mapid',
         zoomDelta: 0.1,
         zoomSnap: 0 //pinch to zoom für mobiles Zoomen
     });
+
 //Hintergrund Weltkarte
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
+
 //sichtbaren Bereich festlegen mit Viereck links oben/rechts unten
 map.fitBounds([
     [48.25256955799006,
@@ -19,6 +21,7 @@ map.fitBounds([
     [48.06431431084693,
         11.732025146484373]
 ]);
+
 //Stadtteile zeichnen
 L.geoJson(stadtteile, {
     style: function (Stadtteil) {
@@ -34,10 +37,8 @@ L.geoJson(stadtteile, {
 
 
 function getcolor(Stadtteil) {
-
-    var Stadtteilname = Stadtteil.properties.name //Aufruf stadtteile.js
-
-    var value = getAlter(Stadtteilname)
+    var Stadtteilname = Stadtteil.properties.name; //Aufruf stadtteile.js
+    var value = getAlter(Stadtteilname);
 
     if (value <= 39) { //Bedingungen für Farbe definieren
         return colors [0]
@@ -60,11 +61,9 @@ function getcolor(Stadtteil) {
 }
 
 function getAlter(Stadtteilname) { //Schleifen-Funktion für Altersdurchschnitt
-
     for (var i = 0; i < altersdurchschnitt.length; i++) {
-//Bezug zu altersdurschnitt.js
+        //Bezug zu altersdurschnitt.js
         if (Stadtteilname.startsWith(altersdurchschnitt[i].Stadtbezirk)) {
-
             return altersdurchschnitt[i].Indikator
         }
     }
@@ -80,18 +79,21 @@ function bindEvents(feature, layer) {
     layer.bindPopup("Das Durchschnittsalter in " + Bezirkname.substring(14) + " ist " + Altersbezirk + " Jahre."); //14 Zeichen löschen
 
 }
-var legend = L.control({position: 'bottomright'});
 
+// Legende
+var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
         Altersstufen = [38, 39, 40, 41, 42, 43],
         labels = [];
 
+    div.innerHTML = "<div class='durch'>Durchschnitts-<br>alter<br></div>";
+
     // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < Altersstufen.length; i++) {
         div.innerHTML +=
-            '<i style="background:' + colors[i]  + '"></i> ' +
+            '<i style="background:' + colors[i] + '"></i> ' +
             Altersstufen[i] + (Altersstufen[i + 1] ? '&ndash;' + Altersstufen[i + 1] + '<br>' : '+');
     }
 
