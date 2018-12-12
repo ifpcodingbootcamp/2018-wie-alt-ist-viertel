@@ -9,8 +9,8 @@ var altersgruppen=[
     "0-18 Prozent": "11,7",
     "0-65 insgesamt": 15027,
     "0-65 Prozent": "71,8",
-    "65 und �lter insgesamt": 3450,
-    "65 und �lter Prozent": "16,5"
+    "65 und aelter insgesamt": 3450,
+    "65 und aelter Prozent": "16,5"
   },
   {
     "Name": "Stadtbezirk 02",
@@ -22,8 +22,8 @@ var altersgruppen=[
     "0-18 Prozent": "11,9",
     "0-65 insgesamt": 39704,
     "0-65 Prozent": "76,9",
-    "65 und �lter insgesamt": 5790,
-    "65 und �lter Prozent": "11,2"
+    "65 und aelter insgesamt": 5790,
+    "65 und aelter Prozent": "11,2"
   },
   {
     "Name": "Stadtbezirk 03",
@@ -35,8 +35,8 @@ var altersgruppen=[
     "0-18 Prozent": "9,7",
     "0-65 insgesamt": 40182,
     "0-65 Prozent": "78,3",
-    "65 und �lter insgesamt": 6137,
-    "65 und �lter Prozent": "12,0"
+    "65 und aelter insgesamt": 6137,
+    "65 und aelter Prozent": "12,0"
   },
   {
     "Name": "Stadtbezirk 04",
@@ -48,8 +48,8 @@ var altersgruppen=[
     "0-18 Prozent": "12,9",
     "0-65 insgesamt": 48031,
     "0-65 Prozent": "70,4",
-    "65 und �lter insgesamt": 11439,
-    "65 und �lter Prozent": "16,8"
+    "65 und aelter insgesamt": 11439,
+    "65 und aelter Prozent": "16,8"
   },
   {
     "Name": "Stadtbezirk 05",
@@ -61,8 +61,8 @@ var altersgruppen=[
     "0-18 Prozent": "14,2",
     "0-65 insgesamt": 43785,
     "0-65 Prozent": "71,9",
-    "65 und �lter insgesamt": 8514,
-    "65 und �lter Prozent": "14,0"
+    "65 und aelter insgesamt": 8514,
+    "65 und aelter Prozent": "14,0"
   },
   {
     "Name": "Stadtbezirk 06",
@@ -74,8 +74,8 @@ var altersgruppen=[
     "0-18 Prozent": "13,0",
     "0-65 insgesamt": 29574,
     "0-65 Prozent": "72,7",
-    "65 und �lter insgesamt": 5829,
-    "65 und �lter Prozent": "14,3"
+    "65 und aelter insgesamt": 5829,
+    "65 und aelter Prozent": "14,3"
   },
   {
     "Name": "Stadtbezirk 07",
@@ -87,8 +87,8 @@ var altersgruppen=[
     "0-18 Prozent": "14,8",
     "0-65 insgesamt": 39799,
     "0-65 Prozent": "67,0",
-    "65 und �lter insgesamt": 10795,
-    "65 und �lter Prozent": "18,2"
+    "65 und aelter insgesamt": 10795,
+    "65 und aelter Prozent": "18,2"
   },
   {
     "Name": "Stadtbezirk 08",
@@ -100,8 +100,8 @@ var altersgruppen=[
     "0-18 Prozent": "14,1",
     "0-65 insgesamt": 21724,
     "0-65 Prozent": "73,6",
-    "65 und �lter insgesamt": 3649,
-    "65 und �lter Prozent": "12,4"
+    "65 und aelter insgesamt": 3649,
+    "65 und aelter Prozent": "12,4"
   },
   {
     "Name": "Stadtbezirk 09",
@@ -113,8 +113,8 @@ var altersgruppen=[
     "0-18 Prozent": "14,2",
     "0-65 insgesamt": 68123,
     "0-65 Prozent": "69,1",
-    "65 und �lter insgesamt": 16412,
-    "65 und �lter Prozent": "16,7"
+    "65 und aelter insgesamt": 16412,
+    "65 und aelter Prozent": "16,7"
   },
   {
     "Name": "Stadtbezirk 10",
@@ -126,8 +126,8 @@ var altersgruppen=[
     "0-18 Prozent": "15,5",
     "0-65 insgesamt": 35607,
     "0-65 Prozent": "66,4",
-    "65 und �lter insgesamt": 9757,
-    "65 und �lter Prozent": "18,2"
+    "65 und aelter insgesamt": 9757,
+    "65 und aelter Prozent": "18,2"
   },
   {
     "Name": "Stadtbezirk 11",
@@ -139,8 +139,8 @@ var altersgruppen=[
     "0-18 Prozent": "15,1",
     "0-65 insgesamt": 51873,
     "0-65 Prozent": "69,4",
-    "65 und �lter insgesamt": 11597,
-    "65 und �lter Prozent": "15,5"
+    "65 und aelter insgesamt": 11597,
+    "65 und aelter Prozent": "15,5"
   },
   {
     "Name": "Stadtbezirk 12",
@@ -152,8 +152,8 @@ var altersgruppen=[
     "0-18 Prozent": "14,7",
     "0-65 insgesamt": 53676,
     "0-65 Prozent": "70,3",
-    "65 und �lter insgesamt": 11471,
-    "65 und �lter Prozent": "15,0"
+    "65 und aelter insgesamt": 11471,
+    "65 und aelter Prozent": "15,0"
   },
   {
     "Name": "Stadtbezirk 13",
@@ -165,8 +165,8 @@ var altersgruppen=[
     "0-18 Prozent": "15,4",
     "0-65 insgesamt": 54916,
     "0-65 Prozent": "63,9",
-    "65 und �lter insgesamt": 17773,
-    "65 und �lter Prozent": "20,7"
+    "65 und aelter insgesamt": 17773,
+    "65 und aelter Prozent": "20,7"
   },
   {
     "Name": "Stadtbezirk 14",
@@ -178,8 +178,8 @@ var altersgruppen=[
     "0-18 Prozent": "15,8",
     "0-65 insgesamt": 30531,
     "0-65 Prozent": "67,0",
-    "65 und �lter insgesamt": 7865,
-    "65 und �lter Prozent": "17,3"
+    "65 und aelter insgesamt": 7865,
+    "65 und aelter Prozent": "17,3"
   },
   {
     "Name": "Stadtbezirk 15",
@@ -191,8 +191,8 @@ var altersgruppen=[
     "0-18 Prozent": "20,7",
     "0-65 insgesamt": 46001,
     "0-65 Prozent": "63,9",
-    "65 und �lter insgesamt": 11079,
-    "65 und �lter Prozent": "15,4"
+    "65 und aelter insgesamt": 11079,
+    "65 und aelter Prozent": "15,4"
   },
   {
     "Name": "Stadtbezirk 16",
@@ -204,8 +204,8 @@ var altersgruppen=[
     "0-18 Prozent": "16,7",
     "0-65 insgesamt": 72513,
     "0-65 Prozent": "63,3",
-    "65 und �lter insgesamt": 22811,
-    "65 und �lter Prozent": "19,9"
+    "65 und aelter insgesamt": 22811,
+    "65 und aelter Prozent": "19,9"
   },
   {
     "Name": "Stadtbezirk 17",
@@ -217,8 +217,8 @@ var altersgruppen=[
     "0-18 Prozent": "14,1",
     "0-65 insgesamt": 38184,
     "0-65 Prozent": "70,8",
-    "65 und �lter insgesamt": 8131,
-    "65 und �lter Prozent": "15,1"
+    "65 und aelter insgesamt": 8131,
+    "65 und aelter Prozent": "15,1"
   },
   {
     "Name": "Stadtbezirk 18",
@@ -230,8 +230,8 @@ var altersgruppen=[
     "0-18 Prozent": "14,0",
     "0-65 insgesamt": 35133,
     "0-65 Prozent": "66,8",
-    "65 und �lter insgesamt": 10112,
-    "65 und �lter Prozent": "19,2"
+    "65 und aelter insgesamt": 10112,
+    "65 und aelter Prozent": "19,2"
   },
   {
     "Name": "Stadtbezirk 19",
@@ -243,8 +243,8 @@ var altersgruppen=[
     "0-18 Prozent": "15,1",
     "0-65 insgesamt": 60901,
     "0-65 Prozent": "63,7",
-    "65 und �lter insgesamt": 20199,
-    "65 und �lter Prozent": "21,1"
+    "65 und aelter insgesamt": 20199,
+    "65 und aelter Prozent": "21,1"
   },
   {
     "Name": "Stadtbezirk 20",
@@ -256,8 +256,8 @@ var altersgruppen=[
     "0-18 Prozent": "15,0",
     "0-65 insgesamt": 31324,
     "0-65 Prozent": "63,1",
-    "65 und �lter insgesamt": 10865,
-    "65 und �lter Prozent": "21,9"
+    "65 und aelter insgesamt": 10865,
+    "65 und aelter Prozent": "21,9"
   },
   {
     "Name": "Stadtbezirk 21",
@@ -269,8 +269,8 @@ var altersgruppen=[
     "0-18 Prozent": "17,0",
     "0-65 insgesamt": 47222,
     "0-65 Prozent": "63,7",
-    "65 und �lter insgesamt": 14315,
-    "65 und �lter Prozent": "19,3"
+    "65 und aelter insgesamt": 14315,
+    "65 und aelter Prozent": "19,3"
   },
   {
     "Name": "Stadtbezirk 22",
@@ -282,8 +282,8 @@ var altersgruppen=[
     "0-18 Prozent": "17,7",
     "0-65 insgesamt": 29098,
     "0-65 Prozent": "62,7",
-    "65 und �lter insgesamt": 9068,
-    "65 und �lter Prozent": "19,5"
+    "65 und aelter insgesamt": 9068,
+    "65 und aelter Prozent": "19,5"
   },
   {
     "Name": "Stadtbezirk 23",
@@ -295,8 +295,8 @@ var altersgruppen=[
     "0-18 Prozent": "17,5",
     "0-65 insgesamt": 20804,
     "0-65 Prozent": "63,7",
-    "65 und �lter insgesamt": 6167,
-    "65 und �lter Prozent": "18,9"
+    "65 und aelter insgesamt": 6167,
+    "65 und aelter Prozent": "18,9"
   },
   {
     "Name": "Stadtbezirk 24",
@@ -308,8 +308,8 @@ var altersgruppen=[
     "0-18 Prozent": "18,0",
     "0-65 insgesamt": 38728,
     "0-65 Prozent": "63,6",
-    "65 und �lter insgesamt": 11263,
-    "65 und �lter Prozent": "18,5"
+    "65 und aelter insgesamt": 11263,
+    "65 und aelter Prozent": "18,5"
   },
   {
     "Name": "Stadtbezirk 25",
@@ -321,7 +321,7 @@ var altersgruppen=[
     "0-18 Prozent": "12,8",
     "0-65 insgesamt": 38445,
     "0-65 Prozent": "68,3",
-    "65 und �lter insgesamt": 10645,
-    "65 und �lter Prozent": "18,9"
+    "65 und aelter insgesamt": 10645,
+    "65 und aelter Prozent": "18,9"
   }
 ]
