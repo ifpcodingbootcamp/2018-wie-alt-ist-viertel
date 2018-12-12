@@ -27,9 +27,13 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-#mapid {
+#mapid,
+#mapid2
+{
     height: 70vh; /* vh=viewport height für prozentuale Bildschirmhöhe */
 }
+
+
 
 /* Schrift für Leaflet Karten Popup */
 .leaflet-popup-content-wrapper {

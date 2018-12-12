@@ -1,9 +1,14 @@
+(function(){
+    //Namespace Namensbereich für Javascriptvariable; führt dazu, dass man Bezeichnungen doppelt nehmen kann in anderer Datei.
+
+
+
 var colors = ['#edf8fb', '#ccece6', '#99d8c9', '#66c2a4', '#2ca25f', '#006d2c'];
 
 //Karte initialisieren, Zentrum und Zoom setzen
 var map = L.map('mapid',
     {
-        minZoom: 9,
+        minZoom: 10,
         maxZoom: 12,
         zoomDelta: 0.1,
         zoomSnap: 0 //pinch to zoom für mobiles Zoomen
@@ -104,3 +109,4 @@ legend.onAdd = function (map) {
 };
 
 legend.addTo(map); //Kopiert von https://leafletjs.com/examples/choropleth/
+})();
