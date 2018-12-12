@@ -10,8 +10,11 @@ var map = L.map('mapid',
     });
 
 //Hintergrund Weltkarte
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1IjoiZmVsaXgtZWJlcnQiLCJhIjoiZk5YeUg1NCJ9.jmpn16n3jnPQ3Yhg5NlZgg'
 }).addTo(map);
 
 //sichtbaren Bereich festlegen mit Viereck links oben/rechts unten
@@ -29,7 +32,7 @@ L.geoJson(stadtteile, {
             fillColor: getcolor(Stadtteil), //Stadtteile einfärben - siehe fct getcolor
             color: "#333333",
             weight: 1.5,
-            fillOpacity: 1
+            fillOpacity: 0.3
         }
     },
     onEachFeature: bindEvents
