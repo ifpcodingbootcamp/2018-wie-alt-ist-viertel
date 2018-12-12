@@ -11,6 +11,7 @@ var map = L.map('mapid',
         minZoom: 10,
         maxZoom: 12,
         zoomDelta: 0.1,
+        scrollWheelZoom: false,
         zoomSnap: 0 //pinch to zoom für mobiles Zoomen
     });
 
