@@ -67,3 +67,7 @@ select {
     line-height: 1.4;
     color: whitesmoke;
 }
+
+.impressum a {
+    color: whitesmoke;
+}
